@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- ------------internal css for styling---------- -->
+
+    <style>
+      .submition {
+        /* background-color: aqua; */
+        width: 40%;
+        margin: auto;
+      }
+      input {
+        width: 100%;
+        box-sizing: border-box;
+        margin-top: 10px;
+      }
+
+      #btn {
+        background-color: aqua;
+        border: 1px solid black;
+        border-radius: 3px;
+        padding: 8px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="submition">
+      <form action="./controller/timestable.php" method="get">
+        <label>Insert a Number</label>
+        <br />
+        <input type="number" name="number" id="" />
+        <br />
+        <input type="submit" id="btn" value="Times Table" />
+      </form>
+    </div>
+  </body>
+</html>
