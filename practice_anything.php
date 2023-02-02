@@ -1,4 +1,7 @@
 <?php
+
+use function PHPSTORM_META\elementType;
+
 function tryR($num1, $num2)
 {
     $a = $num1;
@@ -113,10 +116,121 @@ echo "<br>";
 
 $email = "mdbelal@gmail.com";
 
-var_dump(strpos($email,'com' ,12)) ;
+var_dump(strpos($email, 'com', 12));
 echo "<br>";
-if(strpos($email,"@gmail.com") > 0){
-echo "yes have @";
-}else{
+if (strpos($email, "@gmail.com") > 0) {
+    echo "yes have @";
+} else {
     echo "dont have @";
+}
+
+echo "<br>";
+$anyno = 34;
+$anyno2 = 35;
+if ($anyno < $anyno2) {
+    echo "this is right";
+} else {
+    echo "this is wrong";
+}
+echo "<br>";
+printf(is_numeric($anyno));
+echo "<br>";
+function Belal($call)
+{
+    $be = 34;
+    $ba = 56;
+    $ca = $call;
+    $re = $be + $ba + $call;
+    return $re;
+}
+
+
+function Belal2($re, $call2)
+{
+    $res = $re + $call2;
+    echo $res;
+}
+
+Belal2(Belal(34), 50);
+
+echo "<br>";
+
+echo 20 / 2 == 10 ? "right" : "wrong"; //turnery operatior
+
+echo "<br>";
+
+$birds = ['magpie', 'kingfisher', 'bilay'];
+$jekono = [
+    'first' => 'belal',
+    'second' => 'helal',
+    'third' => [
+        'forth' => 'nika',
+        'fith' => 'rakib',
+        'six' => [
+            'seven' => 'raihan'
+        ]
+    ]
+];
+
+// print_r($birds[3]);
+print_r($jekono['third']['six']['seven']);
+
+$jekono['second'] = "harun";
+print_r($jekono['second']);
+var_dump($jekono);
+
+echo "<br>";
+$sn = "my nem is belal i am a very bad student in my class rom i am very danger for every khata ok ";
+
+print_r(substr($sn, 0, 14) . '....');
+
+
+$kdf = null;
+var_dump(empty($kdf));
+var_dump(isset($kdf));
+
+print_r(explode(' ', $sn));
+print_r(implode(' ', $birds));
+var_dump(in_array('doyel', $birds));
+
+print_r(count($birds));
+array_push($birds, 'kaoya');
+
+print_r($birds);
+
+
+echo "<br>";
+
+for ($i = 1; $i < 5; $i++) {
+    echo "<pre>";
+    $kk = '*';
+    echo str_repeat($kk, $i);
+    echo "</pre>";
+    // for()
+};
+echo "<br>";
+
+foreach ($birds as  $bird) {
+    echo "<pre>";
+    print_r($bird);
+    echo "</pre>";
+}
+
+
+echo "<br>";
+
+$ndf = 6;
+for ($i = 1; $i <= 10; $i++) {
+    $r = $ndf * $i;
+    echo "<pre>";
+    echo $ndf . "*" . "$i" . "=" . $r;
+    echo "</pre>";
+}
+
+
+$hjfd = 21;
+if ($hjfd % 2 == 0) {
+    echo "even no";
+} else {
+    echo "odd";
 }
